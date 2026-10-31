@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>THREADVIBE — Wear Your Vibe</title>
+<meta id="md" name="description" content="THREADVIBE: premium printed T-shirts for men and women. Wear Your Vibe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+<script id="ld" type="application/ld+json"></script>
+<style>
+:root{--bg:#faf7f2;--card:#fff;--ink:#111;--mut:#6b655c;--beige:#e8dfd0;--line:#e4dccd;--acc:#111;--accT:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e0e;--card:#181818;--ink:#f4efe6;--mut:#a39c8f;--beige:#2a2620;--line:#2e2a24;--acc:#e8dfd0;--accT:#111}}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+h1,h2,h3,.logo{font-family:Syne,"Helvetica Neue",Arial,sans-serif;letter-spacing:-.02em;line-height:1.1;margin:0}
+h2{font-size:clamp(26px,4vw,38px)}h3{font-size:16px}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit;color:inherit}
+.w{max-width:1200px;margin:auto;padding:0 20px}.mut{color:var(--mut);font-size:13px}
+.ann{background:var(--acc);color:var(--accT);text-align:center;font-size:12px;padding:8px 12px;letter-spacing:.04em}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-size:22px;font-weight:800;letter-spacing:.04em}
+nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;padding:12px 20px 20px;border-bottom:1px solid var(--line)}
+nav.open{display:flex}nav a{padding:10px 0;font-weight:500;position:relative}
+nav a.on{text-decoration:underline;text-underline-offset:6px}
+.ic{display:flex;gap:8px;align-items:center}
+.ib{background:none;border:0;cursor:pointer;position:relative;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;transition:.2s}.ib:hover{background:var(--beige)}
+.ib svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8}
+#cc{position:absolute;top:2px;right:0;background:var(--acc);color:var(--accT);font-size:11px;min-width:18px;height:18px;border-radius:9px;place-items:center;font-weight:600}
+#mb{display:grid}
+@media(min-width:860px){nav{display:flex!important;position:static;flex-direction:row;gap:28px;padding:0;border:0}#mb{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--acc);color:var(--accT);border:1px solid var(--acc);padding:13px 26px;border-radius:999px;font-weight:600;cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.btn.o{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.sm{padding:8px 16px;font-size:13px}.btn.full{width:100%}
+main{animation:in .45s ease;min-height:60vh}@keyframes in{from{opacity:0;transform:translateY(10px)}}
+.hero{display:grid;gap:32px;padding:40px 20px;align-items:center}
+@media(min-width:860px){.hero{grid-template-columns:1.1fr .9fr;padding:72px 20px}}
+.hero h1{font-size:clamp(40px,7vw,78px);font-weight:800;margin:14px 0 18px}.hero p{max-width:460px;color:var(--mut);font-size:17px}
+.tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--mut)}
+.stage{background:var(--beige);border-radius:28px;position:relative;aspect-ratio:1;overflow:hidden}
+.ft{position:absolute;width:52%;animation:fl 6s ease-in-out infinite}.ft.a{left:4%;top:12%;rotate:-8deg}.ft.b{right:4%;top:6%;rotate:7deg;animation-delay:-2s}.ft.c{left:24%;bottom:2%;animation-delay:-4s}
+@keyframes fl{50%{translate:0 -12px}}
+.trust{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:18px 20px;border-block:1px solid var(--line);font-size:13px;font-weight:500;text-align:center}
+@media(min-width:760px){.trust{grid-template-columns:repeat(4,1fr)}}
+.sec{padding:48px 0}.sh{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px;gap:12px}
+.g{display:grid;gap:18px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:760px){.g.c3{grid-template-columns:repeat(3,1fr)}.g.c4{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:1000px){.g.c4{grid-template-columns:repeat(4,1fr)}}
+.card{position:relative;display:block}.card .img{background:var(--beige);border-radius:16px;overflow:hidden;aspect-ratio:4/5;display:grid;place-items:center;padding:10%;margin-bottom:10px}
+.card svg{width:100%;transition:transform .5s}.card:hover svg{transform:scale(1.07) rotate(-2deg)}
+.bd{position:absolute;top:10px;left:10px;background:var(--acc);color:var(--accT);font-size:11px;font-weight:600;padding:3px 9px;border-radius:99px}
+.pr{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.pr s{color:var(--mut);font-size:13px}.dots{margin-left:auto;display:flex;gap:4px}.dots i{width:12px;height:12px;border-radius:50%;border:1px solid var(--line)}
+.col{border-radius:20px;padding:22px;min-height:170px;display:flex;flex-direction:column;justify-content:flex-end;cursor:pointer;transition:.3s;border:1px solid var(--line)}.col:hover{transform:translateY(-5px)}
+.col h3{font-size:22px}
+.chip{border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;cursor:pointer;font-size:13px;transition:.2s}.chip:hover{border-color:var(--ink)}
+.chip.on{background:var(--acc);color:var(--accT);border-color:var(--acc)}.chip[disabled]{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+.sw{width:30px;height:30px;border-radius:50%;border:2px solid var(--line);cursor:pointer;outline-offset:3px;padding:0}.sw.on{outline:2px solid var(--ink)}
+.fl{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 18px}
+.shop{display:grid;gap:24px;padding:32px 0}@media(min-width:860px){.shop{grid-template-columns:250px 1fr}}
+.filters{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;align-self:start}
+.filters summary{font-weight:600;cursor:pointer}.filters b{font-size:13px;display:block;margin-top:14px}
+.bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:10px}.bar select{width:auto}
+.pd{display:grid;gap:32px;padding:32px 20px}@media(min-width:860px){.pd{grid-template-columns:1fr 1fr}}
+.big{background:var(--beige);border-radius:24px;padding:8%;aspect-ratio:1;display:grid;place-items:center}.big svg{max-height:100%;width:100%;animation:in .4s}
+.th{display:flex;gap:10px;margin-top:12px}.th button{width:76px;background:var(--beige);border:2px solid transparent;border-radius:12px;padding:4px;cursor:pointer}.th .on{border-color:var(--ink)}
+.q{display:inline-flex;border:1px solid var(--line);border-radius:99px;align-items:center}.q button{background:none;border:0;width:36px;height:36px;cursor:pointer;font-size:18px}.q span{min-width:24px;text-align:center}
+details.a{border-bottom:1px solid var(--line);padding:12px 0}details.a summary{cursor:pointer;font-weight:600}
+.two{display:grid;gap:26px;padding:32px 20px}@media(min-width:900px){.two{grid-template-columns:1fr 380px;align-items:start}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:18px}
+.row{display:grid;grid-template-columns:84px 1fr auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+.th2{background:var(--beige);border-radius:12px;padding:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);margin-top:4px}
+input[type=range]{padding:0;accent-color:var(--acc)}
+label{font-size:13px;font-weight:500;display:block;margin-bottom:12px}
+label.opt{display:flex;gap:10px;align-items:center;border:1px solid var(--line);padding:12px 14px;border-radius:12px;cursor:pointer;margin-bottom:8px}label.opt input{width:auto;margin:0}
+.f2{display:grid;gap:0 12px}@media(min-width:600px){.f2{grid-template-columns:1fr 1fr}}
+.tl{display:flex;justify-content:space-between;padding:4px 0}.tl.t{font-weight:600;font-size:18px;border-top:1px solid var(--line);margin-top:8px;padding-top:12px}
+.prog{height:6px;background:var(--beige);border-radius:9px;overflow:hidden;margin:8px 0 14px}.prog i{display:block;height:100%;background:var(--acc);transition:width .4s}
+.doc{max-width:760px;padding:48px 20px}.doc h1{font-size:clamp(32px,5vw,48px);margin-bottom:20px}.doc h3{margin:22px 0 6px;font-size:18px}.doc p,.doc li{color:var(--mut)}
+.empty{text-align:center;padding:80px 20px}
+footer{background:#111;color:#e8dfd0;margin-top:60px;padding:48px 0 24px;font-size:14px}
+.fg{display:grid;gap:28px;grid-template-columns:repeat(2,1fr)}@media(min-width:860px){.fg{grid-template-columns:1.6fr 1fr 1fr 1.2fr}}
+footer h4{margin:0 0 10px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#fff}footer a{display:block;padding:3px 0;opacity:.75;transition:.2s}footer a:hover{opacity:1}
+footer input{background:#1c1c1c;border-color:#333;margin:0 0 8px}
+.cp{border-top:1px solid #2a2a2a;margin-top:32px;padding-top:18px;font-size:12px;opacity:.6;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));translate:-50% 30px;background:var(--acc);color:var(--accT);padding:12px 22px;border-radius:99px;opacity:0;pointer-events:none;transition:.3s;z-index:90;font-weight:500}#toast.on{opacity:1;translate:-50% 0}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="ann">Free shipping over ₹999 · Cash on Delivery available · 7-day easy returns</div>
+<header><div class="w">
+<a href="#home" class="logo" aria-label="THREADVIBE home">THREADVIBE</a>
+<nav id="nav" aria-label="Main"><a href="#home" data-r="home">Home</a><a href="#shop" data-r="shop">Shop</a><a href="#shop-men">Men</a><a href="#shop-women">Women</a><a href="#about" data-r="about">About</a><a href="#contact" data-r="contact">Contact</a></nav>
+<div class="ic"><a class="ib" href="#cart" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7zM9 7a3 3 0 016 0"/></svg><span id="cc"></span></a>
+<button class="ib" id="mb" aria-label="Menu" onclick="$('#nav').classList.toggle('open')"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+</div></header>
+<main id="app"></main>
+<footer><div class="w"><div class="fg">
+<div><div class="logo" style="color:#fff;font-size:24px">THREADVIBE</div><p style="opacity:.7;max-width:280px">Premium printed T-shirts for men and women. Wear Your Vibe.</p>
+<form onsubmit="event.preventDefault();toast('You’re on the list!');this.reset()"><input type="email" required placeholder="Your email for drops & offers" aria-label="Email"><button class="btn sm">Subscribe</button></form></div>
+<div><h4>Shop</h4><a href="#shop">All T-shirts</a><a href="#shop-men">Men</a><a href="#shop-women">Women</a><a href="#cart">Cart</a></div>
+<div><h4>Help</h4><a href="#faq">FAQs</a><a href="#shipping">Shipping Policy</a><a href="#returns">Returns &amp; Refunds</a><a href="#privacy">Privacy Policy</a></div>
+<div><h4>Company</h4><a href="#about">About Us</a><a href="#contact">Contact Us</a><a href="mailto:hello@threadvibe.in">hello@threadvibe.in</a><span style="opacity:.75">UPI · COD · Cards · Netbanking</span></div>
+</div><div class="cp"><span>© 2026 THREADVIBE. All rights reserved.</span><span>Made in India 🇮🇳</span></div></div></footer>
+<div id="toast" role="status"></div>
+<script>
+/* ===== Config & data layer (swap api.* for real backend / gateway later) ===== */
+const CFG={free:999,std:79,exp:149,cod:49};
+const PAL={Black:'#141414',White:'#f5f2ec',Beige:'#d9c9ad',Olive:'#5a5f3f',Navy:'#1f2a44',Maroon:'#6b2230',Sage:'#a8b5a0',Sand:'#c9b79c'};
+const SZ=['S','M','L','XL','XXL'];
+const p=(id,name,cat,coll,price,mrp,cols,g,line,flag,desc)=>({id,name,cat,coll,price,mrp,cols:cols.split(','),g,line,flag,desc,sizes:SZ});
+const PRODUCTS=[
+p(1,'Midnight Static','Men','Streetwear',799,1299,'Black,White,Olive','bolt','STATIC','b','A bold lightning graphic for nights that never end. Oversized-friendly relaxed fit.'),
+p(2,'Sunset Club','Women','Retro',749,1199,'Beige,White,Maroon','sun','SUNSET CLUB','b','Golden-hour nostalgia printed on a soft cropped-length tee.'),
+p(3,'Overthink Club','Unisex','Minimal',699,999,'White,Black,Sage','none','OVERTHINK','t','Minimal typography for chronic overthinkers. Clean, quiet, confident.'),
+p(4,'Wavelength','Men','Summer',849,1399,'Navy,White,Sand','wave','WAVELENGTH','b','Ride the same wavelength. A breezy summer staple with a wave print.'),
+p(5,'Soft Chaos','Women','Streetwear',899,1499,'Sand,Black','star','SOFT CHAOS','t','Organised mess in star form. Relaxed fit with a statement chest print.'),
+p(6,'Mono Mood','Unisex','Minimal',649,899,'Black,White,Beige','circle','MONO MOOD','b','One circle, zero noise. Our everyday minimal essential.'),
+p(7,'Desert Rider','Men','Retro',799,1299,'Sand,Maroon,Black','mount','DESERT RIDER','t','Retro mountain print inspired by long highway road trips.'),
+p(8,'Bloom Season','Women','Summer',799,1199,'Sage,White,Beige','flower','BLOOM','t','Fresh floral print for sunny days and slow weekends.'),
+p(9,'Night Owl','Men','Streetwear',849,1399,'Black,Navy','moon','NIGHT OWL','b','For late-night thinkers and early-morning rebels.'),
+p(10,'Good Energy Only','Women','Minimal',699,999,'White,Beige,Maroon','smile','GOOD ENERGY','t','A tiny smile with big good vibes. Soft, lightweight and easy.'),
+p(11,'Chai First','Unisex','Retro',749,1099,'Beige,Black,Maroon','cup','CHAI FIRST','b','Because everything starts with chai. Desi-pop print, premium feel.'),
+p(12,'Hustle Mode','Men','Minimal',749,1099,'Black,Olive','none','HUSTLE MODE','t','Understated motivation. Sharp type on a structured, heavy cotton tee.')];
+pid=id=>PRODUCTS.find(x=>x.id==id);
+pid(5).sizes=SZ.slice(0,3);pid(9).sizes=SZ.slice(0,4);pid(10).sizes=SZ.slice(0,4);
+const ls={get(k,d){try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const api={products:async()=>PRODUCTS,
+ placeOrder:async o=>{const a=ls.get('tv_orders',[]);a.push(o);ls.set('tv_orders',a);return o}, /* TODO: POST to backend + payment gateway */
+ order:id=>ls.get('tv_orders',[]).find(o=>o.id==id)};
+
+/* ===== Helpers ===== */
+const $=s=>document.querySelector(s),inr=n=>'₹'+n.toLocaleString('en-IN'),off=x=>Math.round((1-x.price/x.mrp)*100);
+const lum=h=>{const n=parseInt(h.slice(1),16);return((n>>16)*299+(n>>8&255)*587+(n&255)*114)/1000};
+const GL={none:()=>'',
+bolt:k=>`<path d="M108 78L84 118h18l-8 28 26-40h-18z" fill="${k}"/>`,
+sun:k=>`<circle cx="100" cy="106" r="20" fill="${k}"/><path d="M68 138h64M76 148h48" stroke="${k}" stroke-width="3"/>`,
+wave:k=>`<path d="M68 104q8-14 16 0t16 0 16 0 16 0M68 122q8-14 16 0t16 0 16 0 16 0" stroke="${k}" stroke-width="4" fill="none"/>`,
+star:k=>`<polygon points="100,80 107,102 130,102 111,115 118,138 100,124 82,138 89,115 70,102 93,102" fill="${k}"/>`,
+circle:k=>`<circle cx="100" cy="108" r="22" stroke="${k}" stroke-width="4" fill="none"/><circle cx="112" cy="96" r="5" fill="${k}"/>`,
+mount:k=>`<path d="M68 142l28-48 14 24 10-14 22 38z" fill="${k}"/>`,
+flower:k=>`<g fill="${k}"><circle cx="100" cy="108" r="8"/><circle cx="100" cy="92" r="10" opacity=".8"/><circle cx="100" cy="124" r="10" opacity=".8"/><circle cx="84" cy="108" r="10" opacity=".8"/><circle cx="116" cy="108" r="10" opacity=".8"/></g>`,
+moon:k=>`<path d="M108 82a28 28 0 100 52 24 24 0 010-52z" fill="${k}"/>`,
+smile:k=>`<circle cx="100" cy="108" r="24" stroke="${k}" stroke-width="4" fill="none"/><circle cx="91" cy="102" r="3" fill="${k}"/><circle cx="109" cy="102" r="3" fill="${k}"/><path d="M90 114q10 12 20 0" stroke="${k}" stroke-width="3" fill="none"/>`,
+cup:k=>`<path d="M82 94h32v24a16 16 0 01-32 0zM114 100h6a8 8 0 010 16h-6M90 84q4-6 0-10M100 84q4-6 0-10" stroke="${k}" stroke-width="4" fill="none"/>`};
+function tee(hex,x,v=0){const l=lum(hex)>140,k=l?'#141414':'#f5f2ec',cy=v==1?22:34,t=(y,s,o)=>`<text x="100" y="${y}" text-anchor="middle" font-size="${s}" font-weight="800" letter-spacing="1.4" font-family="Syne,Arial,sans-serif" fill="${k}" ${o||''}>`;
+const pr=v==1?t(52,8,'')+`THREADVIBE</text>`+t(130,11,'')+`${x.line}</text>`:GL[x.g](k)+t(168,9,'')+`${x.line}</text>`;
+return `<svg viewBox="${v==2?'52 62 96 112':'0 0 200 220'}" role="img" aria-label="${x.name} T-shirt, ${v==1?'back':'front'} view"><path d="M70 10L30 28 8 78l30 14 10-16v129h104V76l10 16 30-14-22-50-40-18Q100 ${cy} 70 10z" fill="${hex}" stroke="${l?'rgba(0,0,0,.15)':'rgba(255,255,255,.12)'}"/><path d="M70 10Q100 ${cy} 130 10" fill="none" stroke="${k}" stroke-opacity=".3" stroke-width="3"/>${pr}</svg>`}
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),2200)}
+const go=h=>location.hash==='#'+h?render():location.hash=h;
+
+/* ===== Cart ===== */
+let cart=ls.get('tv_cart',[]).filter(i=>pid(i.id));
+function save(){ls.set('tv_cart',cart);const n=cart.reduce((a,i)=>a+i.qty,0),c=$('#cc');c.textContent=n;c.style.display=n?'grid':'none'}
+function add(id,size,color,qty=1){const x=cart.find(i=>i.id==id&&i.size==size&&i.color==color);x?x.qty=Math.min(10,x.qty+qty):cart.push({id,size,color,qty});save()}
+function cq(k,d){const i=cart[k];i.qty=Math.min(10,i.qty+d);if(i.qty<1)cart.splice(k,1);save();render(1)}
+function crm(k){cart.splice(k,1);save();render(1);toast('Item removed')}
+function totals(ship='std',pay='upi'){const sub=cart.reduce((a,i)=>a+pid(i.id).price*i.qty,0),mrp=cart.reduce((a,i)=>a+pid(i.id).mrp*i.qty,0),sh=!cart.length?0:ship=='exp'?CFG.exp:sub>=CFG.free?0:CFG.std,cod=pay=='cod'?CFG.cod:0;return{sub,disc:mrp-sub,sh,cod,total:sub+sh+cod}}
+const sumH=(s,y)=>{const t=totals(s,y);return `<h3>Order summary</h3>${cart.map(i=>`<div class="tl mut"><span>${pid(i.id).name} (${i.size}) × ${i.qty}</span><span>${inr(pid(i.id).price*i.qty)}</span></div>`).join('')}<hr style="border:0;border-top:1px solid var(--line)"><div class="tl"><span>Subtotal</span><span>${inr(t.sub)}</span></div><div class="tl"><span>You save</span><span>−${inr(t.disc)}</span></div><div class="tl"><span>Shipping</span><span>${t.sh?inr(t.sh):'FREE'}</span></div>${t.cod?`<div class="tl"><span>COD fee</span><span>${inr(t.cod)}</span></div>`:''}<div class="tl t"><span>Total</span><span>${inr(t.total)}</span></div>`};
+
+/* ===== Components ===== */
+const card=x=>`<a class="card" href="#p-${x.id}"><div class="img">${tee(PAL[x.cols[0]],x)}<span class="bd">${off(x)}% OFF</span></div><h3>${x.name}</h3><div class="mut">${x.cat} · ${x.coll}</div><div class="pr"><b>${inr(x.price)}</b><s>${inr(x.mrp)}</s><span class="dots">${x.cols.map(c=>`<i style="background:${PAL[c]}"></i>`).join('')}</span></div></a>`;
+const sec=(t,l,h,body)=>`<section class="sec w"><div class="sh"><h2>${t}</h2>${l?`<a class="btn o sm" href="#${h}">${l}</a>`:''}</div>${body}</section>`;
+const grid=(a,c)=>`<div class="g ${c||'c4'}">${a.map(card).join('')}</div>`;
+
+/* ===== Pages ===== */
+const COLLS=[['Streetwear','#141414','#f5f2ec'],['Minimal','#e8dfd0','#111'],['Retro','#6b2230','#f5f2ec'],['Summer','#a8b5a0','#111']];
+function home(){const P=PRODUCTS;return `<section class="hero"><div><span class="tag">New season · Printed with attitude</span><h1>Express Yourself. Wear Your Vibe.</h1><p>Premium printed T-shirts for men and women. Designed in India, made from 180 GSM combed cotton that feels as good as it looks.</p><div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="#shop">Shop Now →</a><a class="btn o" href="#about">Our story</a></div></div>
+<div class="stage"><div class="ft a">${tee('#141414',P[0])}</div><div class="ft b">${tee('#f5f2ec',P[1])}</div><div class="ft c">${tee('#6b2230',P[10])}</div></div></section>
+<div class="trust"><span>🚚 Free shipping over ₹999</span><span>↩ 7-day easy returns</span><span>💳 UPI · COD · Cards</span><span>🔒 Secure checkout</span></div>
+${sec('Featured collections','','',`<div class="g c4">${COLLS.map(c=>`<div class="col" role="button" tabindex="0" style="background:${c[1]};color:${c[2]}" onclick="F.cat='All';F.coll='${c[0]}';go('shop')"><span class="tag" style="color:inherit;opacity:.7">Collection</span><h3>${c[0]}</h3></div>`).join('')}</div>`)}
+${sec('Best sellers','View all','shop',grid(P.filter(x=>x.flag=='b').slice(0,4)))}
+<section class="sec w" style="padding-top:0">${grid(P.filter(x=>x.flag=='b').slice(4))}</section>
+${sec('Trending now','Shop trending','shop',grid(P.filter(x=>x.flag=='t').slice(0,4)))}
+<section class="sec w"><div class="box" style="text-align:center;padding:48px 20px;background:var(--beige)"><h2>Your vibe, your rules.</h2><p class="mut" style="max-width:480px;margin:12px auto 20px;font-size:15px">Join 25,000+ happy customers who made THREADVIBE part of their everyday look.</p><a class="btn" href="#shop">Explore the collection</a></div></section>`}
+
+let F={cat:'All',size:'',color:'',coll:'',max:1000,sort:'pop',open:innerWidth>860};
+const setF=(k,v)=>{F[k]=v;render(1)};
+function shop(){let r=PRODUCTS.filter(x=>(F.cat=='All'||x.cat==F.cat)&&(!F.coll||x.coll==F.coll)&&(!F.size||x.sizes.includes(F.size))&&(!F.color||x.cols.includes(F.color))&&x.price<=F.max);
+const S={pop:(a,b)=>(b.flag=='b')-(a.flag=='b'),low:(a,b)=>a.price-b.price,high:(a,b)=>b.price-a.price,disc:(a,b)=>off(b)-off(a),new:(a,b)=>b.id-a.id};r.sort(S[F.sort]);
+const ch=(k,a)=>a.map(v=>`<button class="chip ${F[k]==v?'on':''}" onclick="setF('${k}','${v}')">${v||'All'}</button>`).join('');
+return `<div class="w shop"><details class="filters" ${F.open?'open':''} ontoggle="F.open=this.open"><summary>Filters</summary>
+<b>Category</b><div class="fl">${ch('cat',['All','Men','Women','Unisex'])}</div><b>Collection</b><div class="fl">${ch('coll',['','Streetwear','Minimal','Retro','Summer'])}</div>
+<b>Size</b><div class="fl">${ch('size',['',...SZ])}</div><b>Colour</b><div class="fl">${['',...Object.keys(PAL)].map(c=>c?`<button class="sw ${F.color==c?'on':''}" style="background:${PAL[c]}" title="${c}" aria-label="${c}" onclick="setF('color','${c}')"></button>`:`<button class="chip ${!F.color?'on':''}" onclick="setF('color','')">All</button>`).join('')}</div>
+<b>Max price: <span id="pv">${inr(F.max)}</span></b><input type="range" min="600" max="1000" step="50" value="${F.max}" oninput="$('#pv').textContent=inr(+this.value)" onchange="setF('max',+this.value)">
+<button class="btn o sm" style="margin:16px 0 4px" onclick="F={cat:'All',size:'',color:'',coll:'',max:1000,sort:'pop',open:F.open};render(1)">Reset filters</button></details>
+<div><div class="bar"><div><h2 style="font-size:28px">${F.coll||(F.cat=='All'?'All T-shirts':F.cat+'’s T-shirts')}</h2><span class="mut">${r.length} products</span></div>
+<select aria-label="Sort" onchange="setF('sort',this.value)">${[['pop','Popularity'],['low','Price: low to high'],['high','Price: high to low'],['disc','Biggest discount'],['new','Newest']].map(o=>`<option value="${o[0]}" ${F.sort==o[0]?'selected':''}>${o[1]}</option>`).join('')}</select></div>
+${r.length?grid(r,'c3'):'<div class="empty"><h3>No T-shirts match these filters</h3><p class="mut">Try removing a filter or two.</p></div>'}</div></div>`}
+
+let S={};
+const pick=(k,v)=>{S[k]=v;render(1)};
+function pdp(x){if(S.id!=x.id)S={id:x.id,size:'',color:x.cols[0],qty:1,img:0};const hex=PAL[S.color];
+return `<div class="w pd"><div><div class="big">${tee(hex,x,S.img)}</div><div class="th">${[0,1,2].map(i=>`<button class="${S.img==i?'on':''}" onclick="pick('img',${i})" aria-label="View ${i+1}">${tee(hex,x,i)}</button>`).join('')}</div></div>
+<div><div class="mut"><a href="#shop">Shop</a> / ${x.cat}</div><h1 style="font-size:clamp(30px,4vw,44px);margin:8px 0">${x.name}</h1>
+<div class="pr" style="font-size:22px"><b>${inr(x.price)}</b><s>${inr(x.mrp)}</s><span class="bd" style="position:static">${off(x)}% OFF</span></div><p class="mut" style="font-size:12px">Inclusive of all taxes. Free shipping over ₹999.</p><p>${x.desc}</p>
+<b>Colour: ${S.color}</b><div class="fl">${x.cols.map(c=>`<button class="sw ${S.color==c?'on':''}" style="background:${PAL[c]}" title="${c}" aria-label="${c}" onclick="pick('color','${c}')"></button>`).join('')}</div>
+<b>Size</b><div class="fl">${SZ.map(s=>`<button class="chip ${S.size==s?'on':''}" ${x.sizes.includes(s)?'':'disabled'} onclick="pick('size','${s}')">${s}</button>`).join('')}</div>
+<b>Quantity</b><div class="fl"><div class="q"><button onclick="pick('qty',Math.max(1,S.qty-1))" aria-label="Decrease">−</button><span>${S.qty}</span><button onclick="pick('qty',Math.min(10,S.qty+1))" aria-label="Increase">+</button></div></div>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn" style="flex:1" onclick="buy(${x.id},0)">Add to Cart</button><button class="btn o" style="flex:1" onclick="buy(${x.id},1)">Buy Now</button></div>
+<div style="margin-top:24px"><details class="a" open><summary>Details</summary><p class="mut">100% combed cotton, 180 GSM, pre-shrunk. Water-based, long-lasting print. Regular unisex fit.</p></details><details class="a"><summary>Care</summary><p class="mut">Machine wash cold, inside out. Do not bleach. Iron on reverse side only.</p></details><details class="a"><summary>Delivery &amp; returns</summary><p class="mut">Delivered in 4–6 working days. Easy 7-day returns on unused items.</p></details></div></div></div>
+${sec('You may also like','','',grid(PRODUCTS.filter(y=>y.id!=x.id&&(y.cat==x.cat||y.coll==x.coll)).slice(0,4)))}`}
+function buy(id,now){if(!S.size)return toast('Please select a size first');add(id,S.size,S.color,S.qty);now?go('checkout'):(toast('Added to cart'),render(1))}
+
+function cartP(){if(!cart.length)return `<div class="empty w"><h2>Your cart is empty</h2><p class="mut">Find something that matches your vibe.</p><a class="btn" href="#shop">Start shopping</a></div>`;
+const t=totals(),left=Math.max(0,CFG.free-t.sub);
+return `<div class="w two"><div><h2 style="margin-bottom:8px">Your cart</h2><div class="mut">${left?`Add ${inr(left)} more for free shipping`:'🎉 You’ve unlocked free shipping'}</div><div class="prog"><i style="width:${Math.min(100,t.sub/CFG.free*100)}%"></i></div>
+${cart.map((i,k)=>{const x=pid(i.id);return `<div class="row"><a class="th2" href="#p-${x.id}">${tee(PAL[i.color],x)}</a><div><a href="#p-${x.id}"><b>${x.name}</b></a><div class="mut">${i.color} · ${i.size}</div><div class="q" style="margin-top:6px"><button onclick="cq(${k},-1)" aria-label="Decrease">−</button><span>${i.qty}</span><button onclick="cq(${k},1)" aria-label="Increase">+</button></div></div><div style="text-align:right"><b>${inr(x.price*i.qty)}</b><br><button class="chip" style="margin-top:8px" onclick="crm(${k})">Remove</button></div></div>`}).join('')}</div>
+<aside class="box" style="position:sticky;top:90px">${sumH('std','upi')}<a class="btn full" style="margin-top:14px" href="#checkout">Proceed to Checkout</a><a class="btn o full" style="margin-top:8px" href="#shop">Continue shopping</a></aside></div>`}
+
+function checkout(){if(!cart.length)return cartP();
+const inp=(n,l,a)=>`<label>${l}<input name="${n}" required ${a||''}></label>`;
+return `<form id="cf" class="two" onsubmit="place(event)" onchange="chk()"><div><h2 style="margin-bottom:18px">Checkout</h2>
+<div class="box"><h3 style="margin-bottom:14px">Contact &amp; delivery address</h3><div class="f2">${inp('name','Full name','autocomplete="name"')}${inp('phone','Phone number','type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" title="10-digit Indian mobile number" autocomplete="tel"')}</div>
+<label>Email (optional)<input name="email" type="email" autocomplete="email"></label>${inp('addr','Address (house no., street, area)','autocomplete="street-address"')}
+<div class="f2">${inp('city','City')}${inp('state','State')}</div>${inp('pin','PIN code','inputmode="numeric" pattern="[0-9]{6}" maxlength="6" title="6-digit PIN code"')}</div>
+<div class="box"><h3 style="margin-bottom:14px">Delivery</h3><label class="opt"><input type="radio" name="ship" value="std" checked><span><b>Standard</b> · 4–6 days · ${totals().sub>=CFG.free?'FREE':inr(CFG.std)}</span></label><label class="opt"><input type="radio" name="ship" value="exp"><span><b>Express</b> · 2–3 days · ${inr(CFG.exp)}</span></label></div>
+<div class="box"><h3 style="margin-bottom:14px">Payment</h3><label class="opt"><input type="radio" name="pay" value="upi" checked><span><b>UPI</b> · GPay, PhonePe, Paytm</span></label>
+<div id="upi"><label>UPI ID<input name="upiid" placeholder="name@bank" pattern="[A-Za-z0-9._\\-]{2,}@[A-Za-z]{2,}" title="e.g. name@okhdfc"></label></div>
+<label class="opt"><input type="radio" name="pay" value="cod"><span><b>Cash on Delivery</b> · +${inr(CFG.cod)} handling fee</span></label>
+<label class="opt"><input type="radio" name="pay" value="online"><span><b>Online payment</b> · Cards, Netbanking, Wallets</span></label><p id="onl" class="mut" style="display:none">You’ll be taken to our secure payment gateway to complete the payment (demo).</p></div></div>
+<aside class="box" id="sum" style="position:sticky;top:90px"></aside></form>`}
+function chk(){const f=$('#cf');if(!f)return;const s=f.ship.value,y=f.pay.value;$('#sum').innerHTML=sumH(s,y)+`<button class="btn full" style="margin-top:14px">Place Order · ${inr(totals(s,y).total)}</button><p class="mut" style="text-align:center;margin:10px 0 0">🔒 Your details are safe and encrypted</p>`;$('#upi').style.display=y=='upi'?'block':'none';f.upiid.required=y=='upi';$('#onl').style.display=y=='online'?'block':'none'}
+async function place(e){e.preventDefault();const f=e.target,s=f.ship.value,y=f.pay.value,d=new Date(),est=n=>{const x=new Date(d);x.setDate(x.getDate()+n);return x.toLocaleDateString('en-IN',{day:'numeric',month:'short'})};
+const o={id:'TV'+Date.now().toString().slice(-8),date:d.toISOString(),items:cart.map(i=>({...i,name:pid(i.id).name,price:pid(i.id).price})),totals:totals(s,y),ship:s,pay:y,eta:s=='exp'?est(2)+' – '+est(3):est(4)+' – '+est(6),customer:{name:f.name.value,phone:f.phone.value,email:f.email.value,address:`${f.addr.value}, ${f.city.value}, ${f.state.value} ${f.pin.value}`},status:'Placed'};
+if(y=='online')toast('Redirecting to secure payment…');await api.placeOrder(o);ls.set('tv_last',o.id);cart=[];save();go('confirmed')}
+function confirmed(){const o=api.order(ls.get('tv_last'));if(!o)return `<div class="empty w"><h2>No recent order</h2><a class="btn" href="#shop">Shop now</a></div>`;
+return `<div class="w doc" style="text-align:center"><div style="font-size:48px">✅</div><h1>Thank you, ${o.customer.name.split(' ')[0]}!</h1><p>Your order <b style="color:var(--ink)">${o.id}</b> is confirmed. ${o.pay=='cod'?'Please keep '+inr(o.totals.total)+' ready at delivery.':o.pay=='upi'?'We’ll send a UPI collect request shortly.':'Payment will be completed via our gateway.'}</p>
+<div class="box" style="text-align:left"><div class="tl"><span>Items</span><span>${o.items.reduce((a,i)=>a+i.qty,0)}</span></div><div class="tl"><span>Total</span><b>${inr(o.totals.total)}</b></div><div class="tl"><span>Estimated delivery</span><span>${o.eta}</span></div><div class="tl"><span>Ship to</span><span style="text-align:right;max-width:60%">${o.customer.address}</span></div></div><a class="btn" href="#shop">Continue shopping</a></div>`}
+
+const doc=(t,b)=>`<article class="w doc"><h1>${t}</h1>${b}</article>`;
+const QA=[['How do I choose my size?','Use our standard fit: S (chest 38"), M (40"), L (42"), XL (44"), XXL (46"). If you’re between sizes, size up for a relaxed look.'],['Will the print fade?','No. We use water-based prints on pre-shrunk cotton. Wash inside out in cold water to keep it vibrant.'],['Which payment methods do you accept?','UPI, Cash on Delivery (₹49 fee), cards, netbanking and wallets.'],['How can I track my order?','You’ll get tracking details by SMS/email once your order ships.'],['Can I cancel my order?','Yes, before it ships. Contact us at hello@threadvibe.in with your order ID.'],['Do you ship across India?','Yes, to 19,000+ PIN codes.']];
+const PAGES={
+about:()=>doc('About THREADVIBE',`<p>THREADVIBE started with one idea: what you wear should say something about you. We design bold, minimal prints for Gen Z and young adults who’d rather express than blend in.</p><h3>Premium, always</h3><p>Every tee is cut from 180 GSM combed cotton, pre-shrunk and printed with long-lasting, skin-friendly inks.</p><h3>Designed in India</h3><p>Our small design team draws from street culture, chai breaks and late-night playlists. Limited drops keep every piece special.</p><a class="btn" href="#shop">Shop the collection</a>`),
+contact:()=>doc('Contact Us',`<p>Questions about an order or a size? We reply within 24 hours.</p><p>📧 hello@threadvibe.in<br>📞 +91 98765 43210 (Mon–Sat, 10am–7pm)<br>📍 Bengaluru, India</p><form class="box" onsubmit="event.preventDefault();toast('Thanks! We’ll reply within 24 hours.');this.reset()"><label>Name<input required></label><label>Email<input type="email" required></label><label>Message<textarea rows="4" required></textarea></label><button class="btn">Send message</button></form>`),
+faq:()=>doc('FAQs',QA.map(q=>`<details class="a"><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join('')),
+shipping:()=>doc('Shipping Policy',`<p>We ship across India from our Bengaluru warehouse.</p><h3>Delivery times</h3><p>Standard: 4–6 working days. Express: 2–3 working days. Orders are dispatched within 24 hours.</p><h3>Charges</h3><p>Free standard shipping on orders over ₹999, otherwise ₹79. Express shipping is ₹149. COD carries a ₹49 handling fee.</p><h3>Tracking</h3><p>Tracking details are sent by SMS and email after dispatch.</p>`),
+returns:()=>doc('Return &amp; Refund Policy',`<p>Not in love with it? Return it within 7 days of delivery.</p><h3>Eligibility</h3><p>Items must be unworn, unwashed and in original packaging with tags.</p><h3>Process</h3><p>Email hello@threadvibe.in with your order ID. We arrange a free pickup for size exchanges.</p><h3>Refunds</h3><p>Refunds are issued to the original payment method within 5–7 working days after inspection. COD refunds are made by bank transfer.</p>`),
+privacy:()=>doc('Privacy Policy',`<p>We respect your privacy and collect only what we need to serve you.</p><h3>What we collect</h3><p>Name, phone, address and order details, used only to process and deliver your orders.</p><h3>How we use it</h3><p>To fulfil orders, provide support and (if you opt in) send offers. We never sell your data.</p><h3>Cookies &amp; storage</h3><p>Your cart is saved in your browser so it’s still there when you return.</p><h3>Your rights</h3><p>Write to hello@threadvibe.in to access or delete your data.</p>`)};
+const META={home:'Premium printed T-shirts for men and women. Express yourself. Wear Your Vibe.',shop:'Shop printed T-shirts for men and women in INR. Filter by size, colour and price.'};
+
+/* ===== Router ===== */
+function render(keep){let h=location.hash.slice(1)||'home';
+if(h=='shop-men'||h=='shop-women'){F.cat=h=='shop-men'?'Men':'Women';F.coll='';return location.replace('#shop')}
+let m=h.match(/^p-(\d+)$/),html,t='THREADVIBE',d=META.home,ld='';
+if(m&&pid(m[1])){const x=pid(m[1]);html=pdp(x);t=x.name+' T-shirt';d=x.desc;ld=JSON.stringify({'@context':'https://schema.org','@type':'Product',name:x.name,description:x.desc,brand:'THREADVIBE',offers:{'@type':'Offer',priceCurrency:'INR',price:x.price,availability:'https://schema.org/InStock'}})}
+else{const R={home,shop,cart:cartP,checkout,confirmed,...PAGES};if(!R[h])h='home';html=R[h]();t=h=='home'?'THREADVIBE':h[0].toUpperCase()+h.slice(1);d=META[h]||'THREADVIBE — '+t;h!='home'&&(t+=' ')}
+document.title=t.trim()+' — THREADVIBE | Wear Your Vibe';$('#md').content=d;$('#ld').textContent=ld;
+$('#app').innerHTML=html;if(!keep)scrollTo(0,0);if(h=='checkout')chk();
+$('#nav').classList.remove('open');document.querySelectorAll('nav a[data-r]').forEach(a=>a.classList.toggle('on',a.dataset.r==h));save()}
+addEventListener('hashchange',()=>render());render();
+</script>
+</body>
+</html>
